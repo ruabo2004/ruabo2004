@@ -66,14 +66,9 @@ I’m a passionate Full Stack Developer dedicated to turning ideas into impactfu
 </a>
 </div>
 
+### 🗓️ Contribution Graph
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ruabo2004/Ruabo2004/output/dist/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ruabo2004/Ruabo2004/output/dist/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Ruabo2004/Ruabo2004/output/dist/pacman-contribution-graph.svg" style="max-width: 100%;">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ruabo2004/Ruabo2004/main/contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ruabo2004/Ruabo2004/main/contribution-graph.svg">
+  <img alt="Contribution graph" src="https://raw.githubusercontent.com/Ruabo2004/Ruabo2004/main/contribution-graph.svg" style="max-width: 100%;">
 </picture>
-
----
-
-Nếu bạn đã dán nội dung này vào file `README.md` trong repository `Ruabo2004` (và commit/lưu lại), hồ sơ GitHub của bạn sẽ hiển thị ngay lập tức!
-
-Bạn có cần tôi hỗ trợ tìm kiếm hướng dẫn để thiết lập GitHub Action (cần thiết cho đồ thị Pac-Man) không?
