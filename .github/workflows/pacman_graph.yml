@@ -6,27 +6,24 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  update-readme:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       
-      # *** BƯỚC SỬA CHỮA LỖI MỚI ***
-      - name: Generate Custom Contribution Graph
-        # Sử dụng Action thay thế mới
-        uses: omid-ahmadpour/github-statistics@v1
+      # *** BƯỚC SỬA LỖI CUỐI CÙNG ***
+      # Sử dụng Action được bảo trì tốt: JamesIves/github-profile-readme
+      # Action này sẽ đảm nhận việc tạo ra các thẻ thống kê/đồ thị đóng góp cơ bản.
+      - name: Create Contribution Graph (Fallback)
+        uses: JamesIves/github-profile-readme@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          user_id: Ruabo2004
-          # Chọn theme Dracula để đồng nhất
-          theme: dracula
-          
-      # Bước 3: Commit và đẩy file SVG mới lên repository
-      - name: Commit files
+          # Thay thế bằng tên người dùng của bạn
+          USER_NAME: Ruabo2004
+          # Đồ thị đóng góp sẽ được tạo và ghi đè lên file README.md
+          # Dữ liệu sẽ được chèn vào giữa và - name: Commit files
         run: |
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          # Thêm tất cả các file đã được tạo
+          git config --global user.name "GitHub Action"
           git add .
           git commit -m "chore: Update contribution graph" || echo "No changes to commit"
           git push
