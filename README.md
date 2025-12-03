@@ -67,8 +67,3 @@ I’m a passionate Full Stack Developer dedicated to turning ideas into impactfu
 </div>
 
 ### 🗓️ Contribution Graph
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ruabo2004/Ruabo2004/main/contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ruabo2004/Ruabo2004/main/contribution-graph.svg">
-  <img alt="Contribution graph" src="https://raw.githubusercontent.com/Ruabo2004/Ruabo2004/main/contribution-graph.svg" style="max-width: 100%;">
-</picture>
