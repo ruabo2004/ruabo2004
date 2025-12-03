@@ -65,5 +65,11 @@ I’m a passionate Full Stack Developer dedicated to turning ideas into impactfu
   <img src="https://github-profile-trophy.vercel.app?username=Ruabo2004&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false&order=4" height="150" alt="trophy graph" style="max-width: 100%; height: auto; max-height: 150px;">
 </a>
 </div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ruabo2004/ruabo2004/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ruabo2004/ruabo2004/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/ruabo2004/ruabo2004/output/pacman-contribution-graph.svg">
+</picture>
 
+_generated with [abozanona/pacman-contribution-graph](https://abozanona.github.io/pacman-contribution-graph/)_
 ### 🗓️ Contribution Graph
