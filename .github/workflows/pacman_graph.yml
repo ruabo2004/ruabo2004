@@ -1,4 +1,4 @@
-name: Pacman Contribution Graph Generation
+name: Generate Contribution Graph
 
 on:
   # Lên lịch chạy Action vào 00:00 UTC (khoảng 7h sáng giờ VN) mỗi ngày
@@ -9,33 +9,26 @@ on:
 
 jobs:
   build:
-    # Chọn hệ điều hành để chạy Action
     runs-on: ubuntu-latest
     steps:
       # Bước 1: Checkout code
       - uses: actions/checkout@v4
       
-      # Bước 2: Thiết lập môi trường Python (Action này sử dụng Python)
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-      
-      # Bước 3: Chạy Action để tạo đồ thị Pacman
-      # LƯU Ý: Đảm bảo user_id phải trùng với tên GitHub của bạn
-      - name: Generate Pacman Contribution Graph
-        uses: yoshioka0120/pacman-contribution-graph@v2
+      # *** BƯỚC SỬA CHỮA LỖI NẰM Ở ĐÂY ***
+      # Sử dụng Action yashprakash13/github-contribution-graph-action@v2 thay thế
+      - name: Generate Custom Contribution Graph
+        uses: yashprakash13/github-contribution-graph-action@v2
         with:
           user_id: Ruabo2004
-          # Bạn có thể thêm light_theme: true hoặc dark_theme: true nếu muốn theme cụ thể
+          # Chọn theme Dracula để đồng nhất với các thống kê khác
+          theme: dracula
           
-      # Bước 4: Commit và đẩy file SVG mới lên repository
+      # Bước 3: Commit và đẩy file SVG mới lên repository
       - name: Commit files
         run: |
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          # Thêm tất cả các file đã được tạo (bao gồm đồ thị Pacman)
+          # File được tạo ra có tên là contribution-graph.svg
           git add .
-          # Commit nếu có thay đổi (|| echo "No changes to commit" để tránh lỗi nếu không có gì thay đổi)
-          git commit -m "chore: Update Pacman Contribution Graph" || echo "No changes to commit"
+          git commit -m "chore: Update contribution graph" || echo "No changes to commit"
           git push
