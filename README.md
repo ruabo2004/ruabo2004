@@ -23,7 +23,6 @@ I’m a passionate Full Stack Developer dedicated to turning ideas into impactfu
 
 ### Backend
 <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#" style="max-width: 100%;">
-<img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java" style="max-width: 100%;">
 
 ### Databases
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" style="max-width: 100%;">
